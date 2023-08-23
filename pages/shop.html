@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Siddharth Store</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/shop.css" />
+    <script src="https://kit.fontawesome.com/0d1e11b028.js"></script>
+    <script src="../scripts/script.js"></script>
+  </head>
+  <body>
+    <section id="header"></section>
+    <section id="page-header">
+      <h2>#shop_at_siddharth's_store</h2>
+      <p>Save more with coupons & up to 70% off!</p>
+    </section>
+    
+    <section id="product1" class="section-p1">
+      <div id="shop-area" class="pro-container"></div>
+
+      <div id="pro-container" class="pro-container">
+        <div class="pro">
+          <img
+            src="../img/products/f1.jpg"
+            alt=""
+            onclick="window.location.href='sproduct.html';"
+          />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>178</h4>
+          </div>
+          <a href="#" class="fal fa-bag-shopping cart"></a>
+        </div>
+      </div>
+    </section>
+    <section id="pagination" class="section-p1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+    </section>
+    <section id="newsletter" class="section-p1" class="section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get E-mail updates about our shop and <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <!-- Footer Section Starts -->
+    <footer class="section-p1" id="footer"></footer>
+    <!-- Footer Section Ends -->
+    <script type="module">
+      import navbar from "../modules/otherHeader.js";
+      import foo from "../modules/footer.js";
+
+      let nav = document.getElementById("header");
+      let footer = document.getElementById("footer");
+
+      nav.innerHTML = navbar();
+      footer.innerHTML = foo();
+    </script>
+    <script src="../scripts/shop.js"></script>
+  </body>
+</html>

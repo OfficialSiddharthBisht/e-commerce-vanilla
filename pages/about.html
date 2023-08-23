@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Siddharth E commerce</title>
+    <!-- Animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <script src="https://kit.fontawesome.com/0d1e11b028.js"></script>
+    <script src="../scripts/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Header Section Starts -->
+    <section id="header"></section>
+    <!-- Header Section Ends -->
+    <section id="page-headerr" class="about-header">
+      <h2>#GetToKnowUs</h2>
+      <p>We sell emotions !</p>
+    </section>
+    <!-- 3D Vid -->
+    <div id="3d">
+      <video
+        id="myVideo"
+        src="../3dAssets/videos/ecom-vid.mp4"
+        muted
+        autoplay
+        loop
+        style="width: 99vw; z-index: -1"
+      ></video>
+    </div>
+    <section id="about-head" class="section-p1">
+      <img
+        class="animate__heartBeat"
+        src="../3dAssets/images/Worklife.png"
+        alt=""
+      />
+      <div>
+        <h2>Who We Are?</h2>
+        <p style="font-family: cursive">
+          Welcome to Siddharth's Store! We are a passionate team of enthusiasts
+          dedicated to bringing you the finest selection of fashion and
+          accessories. With years of experience in the industry, we curate a
+          diverse range of high-quality products that elevate your style. At
+          Oestin Store, we believe that fashion is an expression of
+          individuality and self-confidence. That's why we handpick each item in
+          our collection, ensuring that it meets our strict standards of
+          quality, trendiness, and comfort. From stylish clothing to chic
+          accessories, we strive to offer you the latest and most desirable
+          pieces. Our team consists of fashion-savvy experts who are always
+          ready to assist you in finding the perfect ensemble or accessory.
+          Whether you need style advice, personalized recommendations, or
+          assistance with placing an order, we're here to help. We take pride in
+          delivering exceptional customer service and ensuring your satisfaction
+          at every step of the way. "
+        </p>
+
+        <abbr title="" style="font-family: cursive"
+          >As a customer-centric company, we prioritize your convenience and
+          peace of mind. We provide secure payment options, fast shipping, and
+          easy returns, ensuring that your shopping experience with us is
+          seamless and enjoyable.</abbr
+        >
+        <br /><br />
+
+        <marquee bgcolor="#ccc" loop="-1" scrollamount="'5" width="100%">
+          Thank you for choosing our Store as your ultimate destination for
+          fashion. Join us on this exciting journey of exploring the latest
+          trends and discovering your unique style. Shop our collection today
+          and let us inspire you to express your fashion-forward personality!
+        </marquee>
+      </div>
+    </section>
+    <!-- Footer Section Starts -->
+    <footer class="section-p1" id="footer"></footer>
+    <!-- Footer Section Ends -->
+    <script type="module">
+      import navbar from "../modules/otherHeader.js";
+      import foo from "../modules/footer.js";
+
+      let nav = document.getElementById("header");
+      let footer = document.getElementById("footer");
+
+      nav.innerHTML = navbar();
+      footer.innerHTML = foo();
+    </script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
